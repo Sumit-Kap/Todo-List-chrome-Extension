@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "MyTodo List",
+  "description": "My todo list",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+     "background",
+    "alarms",
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+   "web_accessible_resources": [
+    "download.png"
+  ],
+ "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "js": ["jquery.min.js","bootstrap.min.js", "main.js","main2.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "main.html",
+    "default_icon": "testing.png",
+    "default_title": "TodoList"
+  }
+}
