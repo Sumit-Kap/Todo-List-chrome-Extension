@@ -19,12 +19,12 @@
  "content_scripts": [
     {
       "matches": ["http://www.google.com/*"],
-      "js": ["jquery.min.js","bootstrap.min.js", "main.js","main2.js"]
+      "js": ["assets/js/jquery.min.js","assets/js/bootstrap.min.js", "assets/js/main.js","assets/js/main2.js"]
     }
   ],
   "browser_action": {
     "default_popup": "main.html",
-    "default_icon": "testing.png",
+    "default_icon": "assets/icons/testing.png",
     "default_title": "TodoList"
   }
 }
